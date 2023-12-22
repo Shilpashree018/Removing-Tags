@@ -1,0 +1,17 @@
+public class RemovingTags {
+
+	public static void main(String[] args) {
+	 StringBuilder s=new StringBuilder();
+	 s.append("<html> <tile> Welcome </title> <Body> <h1> hii</h1> </body> </html>");
+	 int s1=s.indexOf("<");
+	 while(s1!=-1)
+	 {
+	 int s2=s.indexOf(">");
+	 s.delete(s1, s2+1);
+	 s1=s.indexOf("<");
+	 }
+	 System.out.println(s);
+	 
+	}
+
+}
